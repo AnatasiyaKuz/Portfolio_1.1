@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=VT323&display=swap');
+
+.home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    height: 80vh;
+    border-bottom: 6px dotted #fdb2b7;
+
+    .photo_block {
+        margin-right: 50px;
+        // width: 50%;
+        
+        img{
+            width: 30vw;
+            // height: 100px;
+        }
+
+        span {
+            font-size: 120px;
+            font-family: 'VT323', monospace;
+            position: absolute;
+            left: 30%;
+            // width: 30%;
+            height: 40%;
+            color: #d94f5c;
+        }
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height:30vh;
+        // align-items: flex-end;
+        justify-content: flex-end;
+
+
+        div{
+            border-left: 4px solid #818286;
+            padding: 0 20px;
+            // margin-bottom: 30px;
+
+            p{
+                color: #777;
+                padding-bottom: 30px;
+                span {
+                    color: #fdb2b7;
+                    font-size: 18px;
+                }
+            }
+    
+            button {
+                border: none;
+                text-align: center;
+                overflow-wrap: break-word;
+                display: inline-block;
+                border-radius: 8px;
+                width: 70%;
+                padding: 15px 20px;
+                background-color: #fdb2b7;
+                color: #323239;
+                font-size: 18px;
+                font-weight: 600;
+                cursor: pointer;
+                transition-duration: 0.4s;
+                
+                &:hover {
+                    background-color: #5c5c65;
+                    color: #dcd5d5;
+                }
+            }
+        }
+
+        
+    }
+}
+
+
