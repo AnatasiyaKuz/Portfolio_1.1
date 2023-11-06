@@ -27,13 +27,17 @@ const Home = () => {
     <section className="home">
       <div className="photo_block">
         <img src={MyPhoto} alt="photo" />
-        <span ref={el}></span>
       </div>
 
       <div className="info">
         <div>
-        <p>I'm <span>Anastasiya Kuzich</span>, <br/> a front-end developer <br/> I like building beautiful websites and bringing creative designs to life!</p>
-        <button>Download CV</button>
+          <span className="animated_span" ref={el}></span>
+          <p>
+            I'm <span>Anastasiya Kuzich</span>, <br /> a front-end developer{" "}
+            <br /> I like building beautiful websites and bringing creative
+            designs to life!
+          </p>
+          <button>Download CV</button>
         </div>
       </div>
     </section>
