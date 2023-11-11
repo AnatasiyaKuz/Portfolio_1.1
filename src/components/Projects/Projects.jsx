@@ -77,12 +77,6 @@ const Projects = () => {
       </div>
     </div>
   </div>
-  <div class="slider__nav">
-  {/* x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'" */}
-    <button class="slider__nav__button">Previous</button>
-    {/* x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'" */}
-    <button class="slider__nav__button">Next</button>
-  </div>
 </div>
    </>
   );

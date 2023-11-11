@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import MyPhoto from "../../assets/me.jpg";
 import "./styles.scss";
 import Typed from "typed.js";
 
@@ -26,7 +25,6 @@ const Home = () => {
   return (
     <section className="home">
       <div className="photo_block">
-        <img src={MyPhoto} alt="photo" />
       </div>
 
       <div className="info">
