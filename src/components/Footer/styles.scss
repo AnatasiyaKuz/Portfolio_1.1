@@ -1,0 +1,88 @@
+.footer {
+  opacity: 1;
+  transform: none;
+
+  background-color: #2c2c2c;
+  height: 450px;
+  padding: 70px 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .footer-talk {
+    color: #fff;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4c4c4c;
+
+      button {
+        padding: 26px 51px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #2c2c2c;
+        background: #fff;
+        position: relative;
+        transition: color 0.4s easy-in-out;
+        cursor: pointer;
+
+        &::after {
+          content: "";
+          position: absolute;
+          background: #2c2c2c;
+          opacity: 0.2;
+          top: 0%;
+          left: 0%;
+          width: 0%;
+          height: 100%;
+          color: #fff;
+          transition: width 0.4s ease-in-out;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .footer-content a{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: underline;
+}
+}
+
+@media (843px <= width <= 1239px) {
+  .footer {
+    height: 420px;
+    padding: 40px 20px;
+  }
+}
+
+@media (575px <= width <= 842px) {
+  .footer {
+    height: 317px;
+    padding: 40px 20px;
+
+    .footer-talk h2 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (width <= 574px) {
+  .footer {
+    height: 317px;
+    padding: 40px 20px;
+
+    .footer-talk h2 {
+      font-size: 18px;
+    }
+  }
+}
