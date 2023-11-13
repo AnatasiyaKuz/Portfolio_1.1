@@ -1,35 +1,60 @@
-import { useEffect, useRef } from "react";
 import "./styles.scss";
-import Typed from "typed.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandSpock } from "@fortawesome/free-regular-svg-icons";
 
 const Hero = () => {
-  // const el = useRef(null);
-  // useEffect(() => {
-  //   const typed = new Typed(el.current, {
-  //     strings: ["Hello, World!", "Nice to meet you!"],
-  //     startDelay: 300,
-  //     typeSpeed: 150,
-  //     backSpeed: 150,
-  //     backDelay: 150,
-  //     smartBackspace: true,
-  //     loop: true,
-  //     showCursor: false,
-  //   });
-
-  //   // Destropying
-  //   return () => {
-  //     typed.destroy();
-  //   };
-  // }, []);
+  const MyIcon = () => (
+    <FontAwesomeIcon icon={faHandSpock} size="2xl" style={{ color: "#4356ff" }} />
+  );
 
   return (
     <section className="hero" id="hero">
-
       <div>
         <h1 className="hero-title">FRONTEND DEVELOPER</h1>
-        <p className="hero-subtitle">Anastasiya Kuzich, 21 years old. A passionate young web developer that loves creating, imaginating and coding things to make them real, accessible.</p>
+        <p className="hero-subtitle">
+          Anastasiya Kuzich, 21 years old. A passionate young web developer that
+          loves creating, imaginating and coding things to make them real,
+          accessible.
+        </p>
       </div>
-          {/* <span className="animated_span" ref={el}></span> */}
+      <div className="hero-illustrations">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlLang="en"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 500 500"
+        >
+          <title>Circular Text Path</title>
+          <defs>
+            <path
+              id="textcircle"
+              d="M250,400
+                 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
+              transform="rotate(12,250,250)"
+            />
+          </defs>
+          <g class="textcircle">
+            <text textLength="942">
+              <textPath
+                xlinkHref="#textcircle"
+                aria-label="CSS & SVG are awesome"
+                textLength="942"
+              >
+                React &amp; Front-end Developer | &amp; HTML | CSS | JS |&#160;
+              </textPath>
+            </text>
+            <foreignObject
+              className="icon-container"
+              width="100%"
+              height="100%"
+            >
+              <div className="icon-wrapper">
+                <MyIcon />
+              </div>
+            </foreignObject>
+          </g>
+        </svg>
+      </div>
     </section>
   );
 };

@@ -4,25 +4,25 @@ const Icons = () => {
       <div>
         <ul className="animated_icons">
           <li>
-            <a href="#">
+            <a href="mailto:anastasiya.kuzich@gmail.com">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-              <span class="fa fa-facebook"></span>
+              <span class="fa fa-envelope"></span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://github.com/AnatasiyaKuz" target="_blank">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-              <span class="fa fa-twitter"></span>
+              <span class="fa fa-github"></span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com/anana_bee/" target="_blank">
               <span></span>
               <span></span>
               <span></span>
@@ -31,7 +31,7 @@ const Icons = () => {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/annastkuzich/" target="_blank">
               <span></span>
               <span></span>
               <span></span>

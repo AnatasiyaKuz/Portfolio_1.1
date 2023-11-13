@@ -24,27 +24,29 @@ const About = () => {
   }, []);
 
   return (
-    <section className="about">
+    <section className="about" id="about-a">
       <div className="about_content">
         <span className="title" ref={el}></span>
 
         {/* <h2 className="title">Hi, welcome here !</h2> */}
         <div className="delimitation"></div>
         <p className="text">
-          Morazzani Sebastian, 20 years old. A passionate young web developer
-          that loves creating, imaginating and coding things to make them real,
+          Anatasiya Kuzich, 20 years old. A passionate young web developer with 2.5+ years experience that
+          loves creating, imaginating and coding things to make them real,
           accessible.
           <br />
-          <br />I did an OpenClassrooms online course where I learned how to
+          <br />I did an TeachMeSkills offline course where I learned how to
           code websites. It was a 9 months course, I learned Html, Css at first,
           then JavaScript and React. But I wanted to know more, so I went on
           youtube to learn ExpressJS, NodeJS, and MongoDB to create my own REST
-          API which runs my portfolio. The entire Porfolio has been designed by
-          myself on Figma. <br />
-          Talking about my soft skills: I'm creative, autodidact and
-          independent. <br /> <br />
-          At the end of this course, I had a BTEC Higher National Diploma or Bac
-          +2 in France.
+          API. After completing the course, I worked for a year at IBA Group,
+          where I got my first commercial experience in react development using
+          redax and many libraries. Afterwards, I moved to Israel where I
+          studied FullStack development at Zionet for six months and then
+          gained a lot of experience working with an excellent team at DeliveApp. <br />
+          Talking about my soft skills: I'm creative, responsible and love to work in a team. <br /> <br />
+          Now I am looking for interesting and useful projects where I can benefit
+          and develop myself. &#128151;
         </p>
       </div>
       <img src={Portfolio} alt="portfolio" className="about_pic" />

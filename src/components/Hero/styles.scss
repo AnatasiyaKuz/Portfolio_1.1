@@ -1,10 +1,15 @@
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .hero {
-    padding: 0 20px;
-    padding-bottom: 300px;//////////
+  padding: 0 20px;
 
   div {
     .hero-title {
-      width: 900px;
+      width: 400px;
       color: #2c2c2c;
       font-size: 132px;
       font-weight: 700;
@@ -19,9 +24,59 @@
       text-align: justify;
     }
   }
+
+  .hero-illustrations {
+    display: flex;
+    justify-content: end;
+
+    svg {
+      max-width: 44vmin;
+
+      &:hover .textcircle {
+        transform: scale(1.2) rotate(90deg);
+      }
+    }
+
+    .textcircle {
+      transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+      transform-origin: 250px 250px;
+    }
+
+    text {
+      font-size: 22px;
+      font-family: Roboto;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-variant-ligatures: none;
+      fill: #4356ff;
+      letter-spacing: 6px;
+      animation: rotate 25s linear infinite;
+      transform-origin: 250px 250px;
+    }
+
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Adjust the size as needed */
+      }
+    }
+  }
 }
 
-@media screen and (min-width: 575px) and (max-width: 842px) {
+@media (843px <= width <=1239px) {
+  .hero {
+    .hero-illustrations {
+      right: -30px;
+    }
+  }
+}
+
+@media (575px <= width <= 842px) {
   .hero {
     div {
       .hero-title {
@@ -39,7 +94,7 @@
   }
 }
 
-@media screen and (max-width: 574px) {
+@media (width <= 574px) {
   .hero {
     div {
       .hero-title {
