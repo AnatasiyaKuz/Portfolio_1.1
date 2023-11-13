@@ -9,6 +9,10 @@ import Logo from '../../assets/logo.svg';
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
+  const onHandleClick = () =>{
+    setOpenMenu(!openMenu)
+  }
+
   return (
     <section className="navbar">
       <a href="/">
@@ -23,12 +27,12 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="menu_burger">
-        <button className="burger_button" onClick={() => setOpenMenu(!openMenu)}>{openMenu?<FontAwesomeIcon icon={faXmark} />:<FontAwesomeIcon icon={faBars}/>}</button>
+        <button className="burger_button" onClick={onHandleClick}>{openMenu?<FontAwesomeIcon icon={faXmark} />:<FontAwesomeIcon icon={faBars}/>}</button>
         
         {openMenu?<ul className={`burger_list ${openMenu?'slide-in':''}`}>
           {navLinks.map((link) => (
             <li key={link.id}>
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`#${link.id}`} onClick={onHandleClick}>{link.title}</a>
             </li>
           ))}
         </ul>:''}
