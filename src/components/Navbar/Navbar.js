@@ -5,6 +5,7 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 import Logo from '../../assets/logo.svg';
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -15,14 +16,14 @@ const Navbar = () => {
 
   return (
     <section className="navbar">
-      <a href="/">
+      <Link to="/">
         <img src={Logo}/>
-      </a>
+      </Link>
 
       <ul className="menu">
         {navLinks.map((link) => (
           <li key={link.id}>
-            <a href={`#${link.id}`}>{link.title}</a>
+            <Link to={`${link.id}`}>{link.title}</Link>
           </li>
         ))}
       </ul>
@@ -38,16 +39,6 @@ const Navbar = () => {
         </ul>:''}
       
       </div>
-
-      {/* <div className={`dropdown_menu ${openMenu?'open':''}`}>
-        <ul>
-          {navLinks.map((link) => (
-            <li key={link.id}>
-              <a href="#">{link.title}</a>
-            </li>
-          ))}
-        </ul>
-      </div> */}
     </section>
   );
 };

@@ -7,13 +7,29 @@ import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import ContactPage from "./pages/Contact";
+
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar/> */}
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<ContactPage/>} />
+          <Route path="*" />
+          {/* element={<Error/>} */}
+        </Routes>
+        <Contacts />
+      </BrowserRouter>
+
+      {/* <Navbar />
       <Hero />
       <About/>
-      <Contacts/>
+      <Contacts/> */}
       {/* <About/>
       <Skills/>
       <Projects/>
