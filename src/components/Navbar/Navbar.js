@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <section className="navbar">
-      <Link to="/">
+      <Link to="/Portfolio_1.1">
         <img src={Logo}/>
       </Link>
 

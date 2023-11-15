@@ -18,7 +18,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Portfolio_1.1" element={<Home />} />
           <Route path="/contact" element={<ContactPage/>} />
           <Route path="*" />
           {/* element={<Error/>} */}
