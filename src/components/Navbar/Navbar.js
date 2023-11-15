@@ -33,7 +33,7 @@ const Navbar = () => {
         {openMenu?<ul className={`burger_list ${openMenu?'slide-in':''}`}>
           {navLinks.map((link) => (
             <li key={link.id}>
-              <a href={`#${link.id}`} onClick={onHandleClick}>{link.title}</a>
+              <Link to={`${link.id}`} onClick={onHandleClick}>{link.title}</Link>
             </li>
           ))}
         </ul>:''}
