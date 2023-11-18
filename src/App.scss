@@ -77,12 +77,12 @@ html {
 
         h1 {
           font-size: 118px;
-          width: 50%;
+          width: 55%;
         }
 
         .skills-line {
           height: 2px;
-          width: 50%;
+          width: 45%;
           background-color: #2c2c2c;
         }
       }
@@ -122,6 +122,29 @@ html {
         }
       }
     }
+    .skills-page{
+
+      padding: 0 20px;
+      margin-top: 60px;
+      gap: 66px;
+
+  
+      .skills-header {
+        height: 110px;
+        padding: 0;
+  
+          h1 {
+            font-size: 60px;
+            width: 70%;
+          }
+  
+          .skills-line {
+            height: 2px;
+            width: 80%;
+            background: #2c2c2c;
+          }
+        }
+    }
   }
 }
 
@@ -157,6 +180,30 @@ html {
         }
       }
     }
+
+    .skills-page{
+
+      padding: 0 20px;
+      margin-top: 60px;
+      gap: 66px;
+
+  
+      .skills-header {
+        height: 110px;
+        padding: 0;
+  
+          h1 {
+            font-size: 50px;
+            width: 80%;
+          }
+  
+          .skills-line {
+            height: 2px;
+            width: 60%;
+            background: #2c2c2c;
+          }
+        }
+    }
   }
 }
 
@@ -191,6 +238,30 @@ html {
           width: 226px;
         }
       }
+    }
+
+    .skills-page{
+
+      padding: 0 20px;
+      margin-top: 60px;
+      gap: 66px;
+
+  
+      .skills-header {
+        height: 60px;
+        padding: 0;
+  
+          h1 {
+            font-size: 28px;
+            width: 80%;
+          }
+  
+          .skills-line {
+            height: 2px;
+            width: 60%;
+            background: #2c2c2c;
+          }
+        }
     }
   }
 }
