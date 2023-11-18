@@ -2,6 +2,9 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./styles.scss";
 import { useForm, SubmitHandler } from "react-hook-form";
+// import Swal from "sweetalert2";
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
 
 export const ContactUs = () => {
   const form = useRef();
@@ -14,25 +17,38 @@ export const ContactUs = () => {
     formState: { errors, isValid },
   } = useForm({mode:'onBlur'});
 
-  const sendEmail = (e) => {
-    
-    reset();
+  console.log(errors, isValid);
 
-    // console.log(form);
+  const sendEmail = (e) => {
 
     emailjs
       .sendForm(
         "service_h5zbyha",
-        "template_boynptk",
+        "template_boynpt",
         form.current,
         "V8wqS2EPv4J0vC0V5"
       )
       .then(
         (result) => {
           console.log(result.text);
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Your letter has been sent successfully",
+            showConfirmButton: false,
+            timer: 1500
+          });
+          reset();
         },
         (error) => {
           console.log(error.text);
+          Swal.fire({
+            position: "top-end",
+            icon: "error",
+            title: "Something went wrong",
+            showConfirmButton: false,
+            timer: 1500
+          });
         }
       );
   };

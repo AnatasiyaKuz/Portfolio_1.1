@@ -2,10 +2,9 @@ import "./styles.scss";
 import React from "react";
 import { skills } from "../../constants";
 
-const Skills = () => {
+const Skillsd = () => {
   return (
     <section className="skills">
-      <h1 className="my_skill">My skills</h1>
       <div className="skills_block">
         {skills.map((skill) => (
           <div className="card">
@@ -30,4 +29,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Skillsd;
