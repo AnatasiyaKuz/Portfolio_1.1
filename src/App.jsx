@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import ContactPage from "./pages/Contact";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
+import { realizations } from "./constants";
 
 function App() {
   return (
@@ -22,6 +23,11 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<ContactPage/>} />
           <Route path="/projects" element={<Projects/>} />
+          {
+            realizations.map((realization)=>(
+              <Route path={realization.id} element={<Projects {...realization}/>} />
+            ))
+          }
           <Route path="*" />
           {/* element={<Error/>} */}
         </Routes>

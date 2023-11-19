@@ -1,4 +1,4 @@
-import HooBank from '../assets/hooBank.png'
+import HooBank from "../assets/hooBank.png";
 
 export const navLinks = [
   {
@@ -23,8 +23,14 @@ export const realizations = [
   {
     id: "/Portfolio_1.1/modern-bank-app",
     title: "HooBank",
-    img:HooBank,
-    description:"HooBank is a personal project that I made to discover tailwindcss with React."
+    img: HooBank,
+    description:
+      "HooBank is a personal project that I made to discover tailwindcss with React.",
+    blog_description:
+      "HooBank is a website of a modern bank. This is one of my learning projects that I made to learn the basics of Tailwindсss.",
+    technologies: ["React", "Tailwindcss", "Figma", "Git"],
+    link: "https://anatasiyakuz.github.io/bank_modern_app/",
+    git_link: "https://github.com/AnatasiyaKuz/bank_modern_app",
   },
   // {
   //   id: "/skills",
