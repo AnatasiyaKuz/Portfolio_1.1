@@ -1,7 +1,7 @@
 
 import "./styles.scss";
 
-const Projects = () => {
+const ProjectSlider = () => {
 
     //x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;"
 
@@ -82,4 +82,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectSlider;
