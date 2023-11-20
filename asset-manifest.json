@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Portfolio_1.1/static/css/main.3b04442e.css",
-    "main.js": "/Portfolio_1.1/static/js/main.59cf6673.js",
+    "main.css": "/Portfolio_1.1/static/css/main.5261e42a.css",
+    "main.js": "/Portfolio_1.1/static/js/main.b838a530.js",
     "static/media/portfolio.jpg": "/Portfolio_1.1/static/media/portfolio.311d2a365eceb860f735.jpg",
     "static/media/hooBank.png": "/Portfolio_1.1/static/media/hooBank.d05440c423dbab5399d0.png",
     "static/media/logo.svg": "/Portfolio_1.1/static/media/logo.e05b86a4964540ae65343f225fe9f949.svg",
     "index.html": "/Portfolio_1.1/index.html",
-    "main.3b04442e.css.map": "/Portfolio_1.1/static/css/main.3b04442e.css.map",
-    "main.59cf6673.js.map": "/Portfolio_1.1/static/js/main.59cf6673.js.map"
+    "main.5261e42a.css.map": "/Portfolio_1.1/static/css/main.5261e42a.css.map",
+    "main.b838a530.js.map": "/Portfolio_1.1/static/js/main.b838a530.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b04442e.css",
-    "static/js/main.59cf6673.js"
+    "static/css/main.5261e42a.css",
+    "static/js/main.b838a530.js"
   ]
 }
