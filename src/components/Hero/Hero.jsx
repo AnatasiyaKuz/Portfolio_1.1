@@ -4,7 +4,7 @@ import { faHandSpock } from "@fortawesome/free-regular-svg-icons";
 
 const Hero = () => {
   const MyIcon = () => (
-    <FontAwesomeIcon icon={faHandSpock} size="2xl" style={{ color: "#4356ff" }} />
+    <FontAwesomeIcon icon={faHandSpock} size="2xl" style={{ color: "#fff" }} />
   );
 
   return (

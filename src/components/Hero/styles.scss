@@ -5,12 +5,17 @@
 }
 
 .hero {
-  padding: 93px 20px 184px ;
+  padding: 0 20px;
+  padding-top: 100px;
+  background-color: #2c2c2c;
+  height: 100vh;
 
   div {
+    max-width: 1240px;
+    margin-inline: auto;
     .hero-title {
       width: 100%;
-      color: #2c2c2c;
+      color: #fff;
       font-size: 132px;
       font-weight: 700;
       line-height: 130px;
@@ -19,7 +24,7 @@
 
     .hero-subtitle {
       width: 783px;
-      color: #4c4c4c;
+      color: #7c7c7c;
       font-size: 26px;
       text-align: justify;
     }
@@ -48,7 +53,7 @@
       font-weight: 500;
       text-transform: uppercase;
       font-variant-ligatures: none;
-      fill: #4356ff;
+      fill: #fff;
       letter-spacing: 6px;
       animation: rotate 25s linear infinite;
       transform-origin: 250px 250px;

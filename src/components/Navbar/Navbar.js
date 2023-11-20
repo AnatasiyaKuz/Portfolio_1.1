@@ -4,40 +4,56 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
-import Logo from '../../assets/logo.svg';
+import Logo from "../../assets/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
-  const onHandleClick = () =>{
-    setOpenMenu(!openMenu)
-  }
+  const onHandleClick = () => {
+    setOpenMenu(!openMenu);
+  };
 
   return (
     <section className="navbar">
-      <Link to="/Portfolio_1.1">
-        <img src={Logo}/>
-      </Link>
+      <div className="container">
+        <Link to="/Portfolio_1.1">
+          <img src={Logo} />
+        </Link>
 
-      <ul className="menu">
-        {navLinks.map((link) => (
-          <li key={link.id}>
-            <Link to={`${link.id}`}>{link.title}</Link>
-          </li>
-        ))}
-      </ul>
-      <div className="menu_burger">
-        <button className="burger_button" onClick={onHandleClick}>{openMenu?<FontAwesomeIcon icon={faXmark} />:<FontAwesomeIcon icon={faBars}/>}</button>
-        
-        {openMenu?<ul className={`burger_list ${openMenu?'slide-in':''}`}>
+        <ul className="menu">
           {navLinks.map((link) => (
             <li key={link.id}>
-              <Link to={`${link.id}`} onClick={onHandleClick}>{link.title}</Link>
+              <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
-        </ul>:''}
-      
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+        <div className="menu_burger">
+          <button className="burger_button" onClick={onHandleClick}>
+            {openMenu ? (
+              <FontAwesomeIcon icon={faXmark} />
+            ) : (
+              <FontAwesomeIcon icon={faBars} />
+            )}
+          </button>
+
+          {openMenu ? (
+            <ul className={`burger_list ${openMenu ? "slide-in" : ""}`}>
+              {navLinks.map((link) => (
+                <li key={link.id}>
+                  <Link to={`${link.id}`} onClick={onHandleClick}>
+                    {link.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            ""
+          )}
+        </div>
       </div>
     </section>
   );
