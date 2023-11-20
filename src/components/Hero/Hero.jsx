@@ -10,10 +10,10 @@ const Hero = () => {
   return (
     <section className="hero" id="hero">
       <div>
-        <h1 className="hero-title">FRONTEND DEVELOPER</h1>
+        <h1 className="hero-title">FRONT-END DEVELOPER</h1>
         <p className="hero-subtitle">
-          Anastasiya Kuzich, 21 years old. A passionate young web developer that
-          loves creating, imaginating and coding things to make them real,
+          Anastasiya Kuzich, 21 years old. I'm a passionate young web developer who
+          loves creating, imaginating and coding things to make them real and
           accessible.
         </p>
       </div>

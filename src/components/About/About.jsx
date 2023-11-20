@@ -31,22 +31,22 @@ const About = () => {
         {/* <h2 className="title">Hi, welcome here !</h2> */}
         <div className="delimitation"></div>
         <p className="text">
-          Anatasiya Kuzich, 21 years old. A passionate young web developer with 2.5+ years experience that
-          loves creating, imaginating and coding things to make them real,
-          accessible.
+          Anatasiya Kuzich, 21 years old. I'm passionate young web developer
+          with 2.5+ years experience who loves creating, imaginating and coding
+          things to make them real and accessible.
           <br />
-          <br />I did an TeachMeSkills offline course where I learned how to
-          code websites. It was a 9 months course, I learned Html, Css at first,
-          then JavaScript and React. But I wanted to know more, so I went on
-          youtube to learn ExpressJS, NodeJS, and MongoDB to create my own REST
-          API. After completing the course, I worked for a year at IBA Group,
-          where I got my first commercial experience in React development using
-          Redux and many libraries. Afterwards, I moved to Israel where I
-          studied FullStack development at Zionet for six months and then
-          gained a lot of experience working with an excellent team at DeliveApp. <br />
-          Talking about my soft skills: I'm creative, responsible and love to work in a team. <br /> <br />
-          Now I am looking for interesting and useful projects where I can benefit
-          and develop myself. &#128151;
+          <br />I attended 9-month courses of web-development where I learned
+          HTML, CSS, JS and React. Also, I taught myself ExpressJS, NodeJs and
+          MongoDB by myself to create my own REST API. After completing the
+          course, I worked for a year at IBA Group, where I got my first
+          commercial experience in React development using Redux and many
+          libraries. Afterwards, I moved to Israel where I studied FullStack
+          development at Zionet for six months and gained a lot of experience
+          working with an excellent team at DeliveApp. <br />
+          Talking about my soft skills: I'm creative, responsible and love to
+          work in a team. <br /> <br />
+          Now I am looking for projects where I can show my skills and be
+          helpfull for the team I work with. &#128151;
         </p>
       </div>
       <img src={Portfolio} alt="portfolio" className="about_pic" />
