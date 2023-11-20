@@ -44,7 +44,7 @@ const Navbar = () => {
           </button>
 
           {openMenu ? (
-            <ul className={`burger_list ${openMenu ? "slide-in" : ""}`}>
+            <ul className={`burger_list ${openMenu ? "slide-in" : ""}`} onClick={onHandleClick}>
               <li>
                 <Link to="/Portfolio_1.1">Home</Link>
               </li>
