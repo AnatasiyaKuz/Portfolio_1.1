@@ -26,6 +26,8 @@ html {
     flex-direction: column;
     justify-content: space-between;
     gap: 150px;
+    max-width: 1240px;
+    margin-inline: auto;
 
     .contact-header {
       display: flex;
@@ -93,6 +95,8 @@ html {
     width: 100%;
     overflow: hidden;
     padding: 0 20px;
+    max-width: 1240px;
+    margin-inline: auto;
 
     .blog-img {
       width: 100%;

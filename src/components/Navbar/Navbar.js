@@ -22,13 +22,16 @@ const Navbar = () => {
         </Link>
 
         <ul className="menu">
+          <li>
+            <Link to="/Portfolio_1.1">Home</Link>
+          </li>
           {navLinks.map((link) => (
             <li key={link.id}>
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/Portfolio_1.1/contact">Contact</Link>
           </li>
         </ul>
         <div className="menu_burger">
@@ -42,13 +45,17 @@ const Navbar = () => {
 
           {openMenu ? (
             <ul className={`burger_list ${openMenu ? "slide-in" : ""}`}>
+              <li>
+                <Link to="/Portfolio_1.1">Home</Link>
+              </li>
               {navLinks.map((link) => (
                 <li key={link.id}>
-                  <Link to={`${link.id}`} onClick={onHandleClick}>
-                    {link.title}
-                  </Link>
+                  <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
+              <li>
+                <Link to="/Portfolio_1.1/contact">Contact</Link>
+              </li>
             </ul>
           ) : (
             ""

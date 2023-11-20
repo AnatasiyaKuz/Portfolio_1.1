@@ -11,23 +11,30 @@ import ContactPage from "./pages/Contact";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import { realizations } from "./constants";
+import ScrollToTop from "./components/scrollToTop";
 
 function App() {
   return (
     <div className="App">
       {/* <Navbar/> */}
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
         <Routes>
-          <Route path="/Portfolio_1.1" element={<Home />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/contact" element={<ContactPage/>} />
-          <Route path="/projects" element={<Projects/>} />
-          {
-            realizations.map((realization)=>(
-              <Route path={realization.id} element={<Projects {...realization}/>} />
-            ))
-          }
+          <Route path="/Portfolio_1.1" exact element={<Home />} />
+          {/* <Route path="/skills" element={<Skills />} /> */}
+          <Route
+            path="/Portfolio_1.1/contact"
+            exact
+            element={<ContactPage />}
+          />
+          {/* <Route path="/projects" element={<Projects/>} /> */}
+          {realizations.map((realization) => (
+            <Route
+              path={realization.id}
+              element={<Projects {...realization} />}
+            />
+          ))}
           <Route path="*" />
           {/* element={<Error/>} */}
         </Routes>

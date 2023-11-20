@@ -1,10 +1,10 @@
 import HooBank from "../assets/hooBank.png";
 
 export const navLinks = [
-  {
-    id: "/Portfolio_1.1",
-    title: "Home",
-  },
+  // {
+  //   id: "/Portfolio_1.1",
+  //   title: "Home",
+  // },
   {
     id: "about",
     title: "About",
