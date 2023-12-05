@@ -17,9 +17,10 @@
 
 .navbar {
   width: 100%;
-  position: fixed;
-  z-index: 99;
-  top: 0px;
+  position: sticky;
+  // z-index: 99;
+  left: 0;
+  top: 0;
   background: #fff;
   -webkit-box-shadow: 0px 6px 13px 1px rgba(0, 0, 0, 0.91);
   box-shadow: 0px 1px 25px 1px rgba(0, 0, 0, 0.51);
